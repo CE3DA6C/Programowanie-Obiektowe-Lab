@@ -141,6 +141,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="employee.cpp" />
+    <ClCompile Include="notatki_16_11.txt" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>

@@ -79,3 +79,19 @@ void TaxCommand::execute() {
 
 	}
 }
+
+void BonusCommand::execute() { //TODO
+	std::string employee_name, bonus_str;
+	int bonus;
+
+	//TODO WYBIERZ PRACOWNIKA
+
+	std::cout << "Pass bonus\n?";
+	std::getline(std::cin, bonus_str);
+	std::stringstream bonus_stream(bonus_str);
+	bonus_stream >> bonus;
+
+	//TODO OBLICZ PODATEK
+	struct Bonus {employee_name, bonus};
+
+}

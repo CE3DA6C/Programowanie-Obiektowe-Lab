@@ -101,3 +101,8 @@ struct Bonus : TaxCountable<Bonus> {
 		return value;
 	}
 };
+
+class BonusCommand : public Command {
+public:
+	void execute();
+};
