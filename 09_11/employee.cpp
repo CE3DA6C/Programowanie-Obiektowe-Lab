@@ -92,6 +92,6 @@ void BonusCommand::execute() { //TODO
 	bonus_stream >> bonus;
 
 	//TODO OBLICZ PODATEK
-	struct Bonus {employee_name, bonus};
+	struct Bonus {};
 
 }

@@ -66,10 +66,10 @@ struct Salary :public TaxCountable<Salary>{
 
 	Salary(int employeeId, int baseSalary, int experienceExtra): employeeId(employeeId), baseSalary(baseSalary), experienceExtra(experienceExtra)){}
 
-	int total() {
+	int total()	{
 		return baseSalary + experienceExtra;
 	}
-};//incomplete
+};
 
 class SalaryManager {
 public:
