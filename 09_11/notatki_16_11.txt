@@ -1,0 +1,26 @@
+Polimorfizn statyczny :
+-Czêœæ mo¿liwoœci wynikaj¹cych z polimorfizmu dynamicznego
+- Kiedy jest wystarczaj¹cy ?
+-Template'y
+
+
+// CRTP (Curiously recurring template pattern)
+// Je¿eli nie zale¿y nam na przechowywaniu klas dziedzicz¹cych jako jedna kolekcja, a bardziej na implementacji funkcjonalnoœci dorzucanej do wielu klas
+// Korzyœci: wydajniejszy kod dziêki mniejszemu narzutowi
+templace <class Derived>
+class Base {
+public:
+	void functionality()
+	{
+		static_cast<Derived*>(this)->derived_functionality();
+	}
+};
+
+class MyDerived :Base<MyDerived>
+{
+public:
+	void derived_functionality() {} //przekazujemy parametr mówi¹cy o tym jak¹ klas¹ jest podrzêdna
+};
+
+Zadanie:
+mozliwosc przyznawania premii : komenda
